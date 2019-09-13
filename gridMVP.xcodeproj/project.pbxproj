@@ -8,13 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		F6F54105232BF21B00422CEB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F54104232BF21B00422CEB /* AppDelegate.swift */; };
-		F6F54107232BF21B00422CEB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F54106232BF21B00422CEB /* ViewController.swift */; };
+		F6F54107232BF21B00422CEB /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F54106232BF21B00422CEB /* FeedViewController.swift */; };
 		F6F5410A232BF21B00422CEB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6F54108232BF21B00422CEB /* Main.storyboard */; };
 		F6F5410D232BF21B00422CEB /* gridMVP.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F6F5410B232BF21B00422CEB /* gridMVP.xcdatamodeld */; };
 		F6F5410F232BF21C00422CEB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6F5410E232BF21C00422CEB /* Assets.xcassets */; };
 		F6F54112232BF21C00422CEB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6F54110232BF21C00422CEB /* LaunchScreen.storyboard */; };
 		F6F5411D232BF21C00422CEB /* gridMVPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F5411C232BF21C00422CEB /* gridMVPTests.swift */; };
 		F6F54128232BF21D00422CEB /* gridMVPUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F54127232BF21D00422CEB /* gridMVPUITests.swift */; };
+		F6F54139232C124100422CEB /* GroupsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F54138232C124100422CEB /* GroupsViewController.swift */; };
+		F6F5413B232C12C600422CEB /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F5413A232C12C600422CEB /* ExploreViewController.swift */; };
+		F6F5413D232C12FC00422CEB /* DiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F5413C232C12FC00422CEB /* DiscoverViewController.swift */; };
+		F6F5413F232C131500422CEB /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F5413E232C131500422CEB /* EventsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +41,7 @@
 /* Begin PBXFileReference section */
 		F6F54101232BF21B00422CEB /* gridMVP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gridMVP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6F54104232BF21B00422CEB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F6F54106232BF21B00422CEB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F6F54106232BF21B00422CEB /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		F6F54109232BF21B00422CEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F6F5410C232BF21B00422CEB /* gridMVP.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = gridMVP.xcdatamodel; sourceTree = "<group>"; };
 		F6F5410E232BF21C00422CEB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +53,10 @@
 		F6F54123232BF21C00422CEB /* gridMVPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = gridMVPUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6F54127232BF21D00422CEB /* gridMVPUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gridMVPUITests.swift; sourceTree = "<group>"; };
 		F6F54129232BF21D00422CEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6F54138232C124100422CEB /* GroupsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsViewController.swift; sourceTree = "<group>"; };
+		F6F5413A232C12C600422CEB /* ExploreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
+		F6F5413C232C12FC00422CEB /* DiscoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverViewController.swift; sourceTree = "<group>"; };
+		F6F5413E232C131500422CEB /* EventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,8 +107,10 @@
 		F6F54103232BF21B00422CEB /* gridMVP */ = {
 			isa = PBXGroup;
 			children = (
+				F6F54137232C11F000422CEB /* Controller */,
+				F6F54136232C11E500422CEB /* View */,
+				F6F54135232C11E100422CEB /* Model */,
 				F6F54104232BF21B00422CEB /* AppDelegate.swift */,
-				F6F54106232BF21B00422CEB /* ViewController.swift */,
 				F6F54108232BF21B00422CEB /* Main.storyboard */,
 				F6F5410E232BF21C00422CEB /* Assets.xcassets */,
 				F6F54110232BF21C00422CEB /* LaunchScreen.storyboard */,
@@ -126,6 +136,32 @@
 				F6F54129232BF21D00422CEB /* Info.plist */,
 			);
 			path = gridMVPUITests;
+			sourceTree = "<group>";
+		};
+		F6F54135232C11E100422CEB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F6F54136232C11E500422CEB /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F6F54137232C11F000422CEB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F6F54106232BF21B00422CEB /* FeedViewController.swift */,
+				F6F54138232C124100422CEB /* GroupsViewController.swift */,
+				F6F5413A232C12C600422CEB /* ExploreViewController.swift */,
+				F6F5413C232C12FC00422CEB /* DiscoverViewController.swift */,
+				F6F5413E232C131500422CEB /* EventsViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,7 +295,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F6F54107232BF21B00422CEB /* ViewController.swift in Sources */,
+				F6F54139232C124100422CEB /* GroupsViewController.swift in Sources */,
+				F6F54107232BF21B00422CEB /* FeedViewController.swift in Sources */,
+				F6F5413B232C12C600422CEB /* ExploreViewController.swift in Sources */,
+				F6F5413D232C12FC00422CEB /* DiscoverViewController.swift in Sources */,
+				F6F5413F232C131500422CEB /* EventsViewController.swift in Sources */,
 				F6F54105232BF21B00422CEB /* AppDelegate.swift in Sources */,
 				F6F5410D232BF21B00422CEB /* gridMVP.xcdatamodeld in Sources */,
 			);
