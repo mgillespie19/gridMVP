@@ -14,13 +14,13 @@ class Group {
     let type: String
     let description: String
     let image: UIImage
-    let backgroundColor: UIColor
+    let fontColor: UIColor
     
-    init(n: String, t: String, d: String, bgc: UIColor, i: UIImage) {
+    init(n: String, t: String, d: String, fc: UIColor, i: UIImage) {
         self.name = n
         self.type = t
         self.description = d
-        self.backgroundColor = bgc
+        self.fontColor = fc
         self.image = i
     }
     
@@ -28,8 +28,8 @@ class Group {
         self.name = n
         self.type = t
         self.description = d
-        self.backgroundColor = UIColor.white
-        self.image = UIImage(named: "Feed Header")!
+        self.fontColor = UIColor.white
+        self.image = UIImage(named: "Group Background 1")!
     }
 }
 

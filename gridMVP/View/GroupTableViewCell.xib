@@ -15,15 +15,15 @@
         <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="147" id="KGk-i7-Jjw" customClass="GroupTableViewCell" customModule="gridMVP" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="459" height="147"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
                 <rect key="frame" x="0.0" y="0.0" width="459" height="146.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kxM-5d-VIn">
-                        <rect key="frame" x="20" y="10" width="419" height="126.5"/>
+                        <rect key="frame" x="20" y="10.5" width="419" height="130"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Feed Header" translatesAutoresizingMaskIntoConstraints="NO" id="fiG-jp-IhN">
-                                <rect key="frame" x="0.0" y="0.0" width="419" height="126.5"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group Background 1" translatesAutoresizingMaskIntoConstraints="NO" id="fiG-jp-IhN">
+                                <rect key="frame" x="0.0" y="0.0" width="419" height="130"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="keyPath" value="YES"/>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -31,9 +31,9 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Group Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ifx-Hf-OJR">
-                                <rect key="frame" x="159.5" y="15" width="100" height="21"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Group Name" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ifx-Hf-OJR">
+                                <rect key="frame" x="25" y="15" width="394" height="23"/>
+                                <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -41,8 +41,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="fiG-jp-IhN" firstAttribute="top" secondItem="kxM-5d-VIn" secondAttribute="top" id="Cep-Gs-IKw"/>
+                            <constraint firstAttribute="trailing" secondItem="Ifx-Hf-OJR" secondAttribute="trailing" id="POo-Vh-It7"/>
                             <constraint firstItem="Ifx-Hf-OJR" firstAttribute="centerX" secondItem="kxM-5d-VIn" secondAttribute="centerX" id="aYj-hq-fxO"/>
                             <constraint firstItem="fiG-jp-IhN" firstAttribute="leading" secondItem="kxM-5d-VIn" secondAttribute="leading" id="dGL-BD-Hjs"/>
+                            <constraint firstItem="Ifx-Hf-OJR" firstAttribute="leading" secondItem="kxM-5d-VIn" secondAttribute="leading" constant="25" id="ege-io-VO3"/>
+                            <constraint firstAttribute="height" constant="130" id="mJC-D9-HOe"/>
                             <constraint firstItem="Ifx-Hf-OJR" firstAttribute="top" secondItem="kxM-5d-VIn" secondAttribute="top" constant="15" id="mRg-Dw-vL8"/>
                             <constraint firstAttribute="trailing" secondItem="fiG-jp-IhN" secondAttribute="trailing" id="pYj-B6-ulY"/>
                             <constraint firstAttribute="bottom" secondItem="fiG-jp-IhN" secondAttribute="bottom" id="z72-Bk-lji"/>
@@ -76,12 +79,14 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="GroupCellBackground" destination="fiG-jp-IhN" id="c0q-CV-7RP"/>
+                <outlet property="GroupNameLabel" destination="Ifx-Hf-OJR" id="M5w-q9-URL"/>
                 <outlet property="GroupView" destination="kxM-5d-VIn" id="Lnr-HA-tOU"/>
             </connections>
             <point key="canvasLocation" x="148.55072463768118" y="69.308035714285708"/>
         </tableViewCell>
     </objects>
     <resources>
-        <image name="Feed Header" width="187.5" height="122.5"/>
+        <image name="Group Background 1" width="125" height="81.666664123535156"/>
     </resources>
 </document>

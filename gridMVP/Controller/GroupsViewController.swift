@@ -33,6 +33,11 @@ class GroupsViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "GroupCell", for: indexPath) as! GroupTableViewCell
+        let group = groups[indexPath.row]
+        
+        cell.GroupNameLabel.text = group.name
+        cell.GroupNameLabel.textColor = group.fontColor
+        cell.GroupCellBackground.image = groups[indexPath.row].image
         
         return cell
     }
