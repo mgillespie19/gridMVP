@@ -18,24 +18,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Splash" translatesAutoresizingMaskIntoConstraints="NO" id="J1e-GZ-FvE">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Grid Logo" translatesAutoresizingMaskIntoConstraints="NO" id="O4Z-CH-GmV">
+                                <rect key="frame" x="82" y="323" width="250" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="KWM-wn-vdh"/>
+                                    <constraint firstAttribute="height" constant="250" id="MuH-u6-G2P"/>
+                                </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="grid" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xQZ-Mr-3TM">
-                                <rect key="frame" x="143" y="421.5" width="128" height="53"/>
-                                <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="53"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="J1e-GZ-FvE" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="KcO-fj-d2Z"/>
-                            <constraint firstItem="xQZ-Mr-3TM" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="e59-51-IGr"/>
-                            <constraint firstAttribute="bottom" secondItem="J1e-GZ-FvE" secondAttribute="bottom" id="jRL-1b-DCq"/>
-                            <constraint firstItem="J1e-GZ-FvE" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="qzC-h3-0vD"/>
-                            <constraint firstItem="xQZ-Mr-3TM" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="uhG-7D-Eoa"/>
-                            <constraint firstItem="J1e-GZ-FvE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="vht-v8-GGq"/>
+                            <constraint firstItem="O4Z-CH-GmV" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="cH9-4J-jYb"/>
+                            <constraint firstItem="O4Z-CH-GmV" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="zgG-NA-XcR"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -46,6 +40,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Splash" width="125" height="270.66665649414062"/>
+        <image name="Grid Logo" width="522.33331298828125" height="989"/>
     </resources>
 </document>
