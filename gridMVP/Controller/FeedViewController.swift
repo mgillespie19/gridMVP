@@ -12,6 +12,7 @@ class FeedViewController: UIViewController {
 
     @IBOutlet weak var ScrollView: UIScrollView!
     @IBOutlet weak var FeedBackgroundView: UIImageView!
+    let TAG = "FVC:"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,7 +20,18 @@ class FeedViewController: UIViewController {
         ScrollView.delegate = self
         navigationController?.setNavigationBarHidden(true, animated: false)
     }
-
+    
+    @IBAction func FilterButtonPress(_ sender: Any) {
+        print("\(TAG) Filter button pressed")
+    }
+    
+    @IBAction func ScanQRButtonPress(_ sender: Any) {
+        print("\(TAG) Scan QR Button pressed")
+    }
+    
+    @IBAction func PostButtonPress(_ sender: Any) {
+        print("\(TAG) Post button pressed")
+    }
 }
 
 extension FeedViewController: UIScrollViewDelegate {

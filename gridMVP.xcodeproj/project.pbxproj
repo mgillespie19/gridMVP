@@ -19,6 +19,10 @@
 		F6F5413B232C12C600422CEB /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F5413A232C12C600422CEB /* ExploreViewController.swift */; };
 		F6F5413D232C12FC00422CEB /* DiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F5413C232C12FC00422CEB /* DiscoverViewController.swift */; };
 		F6F5413F232C131500422CEB /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F5413E232C131500422CEB /* EventsViewController.swift */; };
+		F6F54144232C80C100422CEB /* GroupTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F54142232C80C100422CEB /* GroupTableViewCell.swift */; };
+		F6F54145232C80C100422CEB /* GroupTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6F54143232C80C100422CEB /* GroupTableViewCell.xib */; };
+		F6F54147232C82F200422CEB /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F54146232C82F200422CEB /* Data.swift */; };
+		F6F54149232C895C00422CEB /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F54148232C895C00422CEB /* Group.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +61,10 @@
 		F6F5413A232C12C600422CEB /* ExploreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
 		F6F5413C232C12FC00422CEB /* DiscoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverViewController.swift; sourceTree = "<group>"; };
 		F6F5413E232C131500422CEB /* EventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
+		F6F54142232C80C100422CEB /* GroupTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupTableViewCell.swift; sourceTree = "<group>"; };
+		F6F54143232C80C100422CEB /* GroupTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GroupTableViewCell.xib; sourceTree = "<group>"; };
+		F6F54146232C82F200422CEB /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		F6F54148232C895C00422CEB /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +149,8 @@
 		F6F54135232C11E100422CEB /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				F6F54146232C82F200422CEB /* Data.swift */,
+				F6F54148232C895C00422CEB /* Group.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -148,6 +158,8 @@
 		F6F54136232C11E500422CEB /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F6F54142232C80C100422CEB /* GroupTableViewCell.swift */,
+				F6F54143232C80C100422CEB /* GroupTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -271,6 +283,7 @@
 				F6F54112232BF21C00422CEB /* LaunchScreen.storyboard in Resources */,
 				F6F5410F232BF21C00422CEB /* Assets.xcassets in Resources */,
 				F6F5410A232BF21B00422CEB /* Main.storyboard in Resources */,
+				F6F54145232C80C100422CEB /* GroupTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,9 +311,12 @@
 				F6F54139232C124100422CEB /* GroupsViewController.swift in Sources */,
 				F6F54107232BF21B00422CEB /* FeedViewController.swift in Sources */,
 				F6F5413B232C12C600422CEB /* ExploreViewController.swift in Sources */,
+				F6F54149232C895C00422CEB /* Group.swift in Sources */,
+				F6F54144232C80C100422CEB /* GroupTableViewCell.swift in Sources */,
 				F6F5413D232C12FC00422CEB /* DiscoverViewController.swift in Sources */,
 				F6F5413F232C131500422CEB /* EventsViewController.swift in Sources */,
 				F6F54105232BF21B00422CEB /* AppDelegate.swift in Sources */,
+				F6F54147232C82F200422CEB /* Data.swift in Sources */,
 				F6F5410D232BF21B00422CEB /* gridMVP.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
