@@ -22,7 +22,7 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kxM-5d-VIn">
                         <rect key="frame" x="20" y="10.5" width="419" height="130"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group Background 1" translatesAutoresizingMaskIntoConstraints="NO" id="fiG-jp-IhN">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group Background 1" translatesAutoresizingMaskIntoConstraints="NO" id="fiG-jp-IhN">
                                 <rect key="frame" x="0.0" y="0.0" width="419" height="130"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="keyPath" value="YES"/>
@@ -32,8 +32,8 @@
                                 </userDefinedRuntimeAttributes>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Group Name" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ifx-Hf-OJR">
-                                <rect key="frame" x="25" y="15" width="394" height="23"/>
-                                <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="20"/>
+                                <rect key="frame" x="25" y="90" width="394" height="25"/>
+                                <fontDescription key="fontDescription" name="CourierNewPS-BoldItalicMT" family="Courier New" pointSize="22"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -42,11 +42,11 @@
                         <constraints>
                             <constraint firstItem="fiG-jp-IhN" firstAttribute="top" secondItem="kxM-5d-VIn" secondAttribute="top" id="Cep-Gs-IKw"/>
                             <constraint firstAttribute="trailing" secondItem="Ifx-Hf-OJR" secondAttribute="trailing" id="POo-Vh-It7"/>
+                            <constraint firstAttribute="bottom" secondItem="Ifx-Hf-OJR" secondAttribute="bottom" constant="15" id="Tzg-r9-4s2"/>
                             <constraint firstItem="Ifx-Hf-OJR" firstAttribute="centerX" secondItem="kxM-5d-VIn" secondAttribute="centerX" id="aYj-hq-fxO"/>
                             <constraint firstItem="fiG-jp-IhN" firstAttribute="leading" secondItem="kxM-5d-VIn" secondAttribute="leading" id="dGL-BD-Hjs"/>
                             <constraint firstItem="Ifx-Hf-OJR" firstAttribute="leading" secondItem="kxM-5d-VIn" secondAttribute="leading" constant="25" id="ege-io-VO3"/>
                             <constraint firstAttribute="height" constant="130" id="mJC-D9-HOe"/>
-                            <constraint firstItem="Ifx-Hf-OJR" firstAttribute="top" secondItem="kxM-5d-VIn" secondAttribute="top" constant="15" id="mRg-Dw-vL8"/>
                             <constraint firstAttribute="trailing" secondItem="fiG-jp-IhN" secondAttribute="trailing" id="pYj-B6-ulY"/>
                             <constraint firstAttribute="bottom" secondItem="fiG-jp-IhN" secondAttribute="bottom" id="z72-Bk-lji"/>
                         </constraints>

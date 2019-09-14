@@ -11,6 +11,8 @@ import UIKit
 
 class GroupsViewController: UITableViewController {
     
+    let TAG = "GVC:"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -37,8 +39,31 @@ class GroupsViewController: UITableViewController {
         
         cell.GroupNameLabel.text = group.name
         cell.GroupNameLabel.textColor = group.fontColor
+        cell.GroupNameLabel.isHidden = group.hideLabel
+        
         cell.GroupCellBackground.image = groups[indexPath.row].image
         
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("\(TAG) click at \(indexPath.row)")
+        
+        tableView.deselectRow(at: indexPath, animated: true)
+        
+        performSegue(withIdentifier: "groupsToGroupDetail", sender: indexPath)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "groupsToGroupDetail" {
+            print("destination: \(segue.destination)")
+            let navController = segue.destination as! UINavigationController
+            let groupController = navController.viewControllers.first as! GroupDetailViewController
+            let indexPath = sender as! IndexPath
+            let group = groups[indexPath.row]
+
+//            groupController.navigationItem.title = group.name
+            groupController.group = group
+        }
     }
 }

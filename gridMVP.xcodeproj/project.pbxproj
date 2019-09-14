@@ -23,6 +23,7 @@
 		F6F54145232C80C100422CEB /* GroupTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6F54143232C80C100422CEB /* GroupTableViewCell.xib */; };
 		F6F54147232C82F200422CEB /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F54146232C82F200422CEB /* Data.swift */; };
 		F6F54149232C895C00422CEB /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F54148232C895C00422CEB /* Group.swift */; };
+		F6F5414B232CAAED00422CEB /* GroupDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F5414A232CAAED00422CEB /* GroupDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		F6F54143232C80C100422CEB /* GroupTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GroupTableViewCell.xib; sourceTree = "<group>"; };
 		F6F54146232C82F200422CEB /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		F6F54148232C895C00422CEB /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
+		F6F5414A232CAAED00422CEB /* GroupDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +171,7 @@
 			children = (
 				F6F54106232BF21B00422CEB /* FeedViewController.swift */,
 				F6F54138232C124100422CEB /* GroupsViewController.swift */,
+				F6F5414A232CAAED00422CEB /* GroupDetailViewController.swift */,
 				F6F5413A232C12C600422CEB /* ExploreViewController.swift */,
 				F6F5413C232C12FC00422CEB /* DiscoverViewController.swift */,
 				F6F5413E232C131500422CEB /* EventsViewController.swift */,
@@ -316,6 +319,7 @@
 				F6F5413D232C12FC00422CEB /* DiscoverViewController.swift in Sources */,
 				F6F5413F232C131500422CEB /* EventsViewController.swift in Sources */,
 				F6F54105232BF21B00422CEB /* AppDelegate.swift in Sources */,
+				F6F5414B232CAAED00422CEB /* GroupDetailViewController.swift in Sources */,
 				F6F54147232C82F200422CEB /* Data.swift in Sources */,
 				F6F5410D232BF21B00422CEB /* gridMVP.xcdatamodeld in Sources */,
 			);

@@ -15,21 +15,24 @@ class Group {
     let description: String
     let image: UIImage
     let fontColor: UIColor
+    let hideLabel: Bool
     
-    init(n: String, t: String, d: String, fc: UIColor, i: UIImage) {
+    init(n: String, t: String, d: String, fc: UIColor, i: UIImage, hl: Bool) {
         self.name = n
         self.type = t
         self.description = d
         self.fontColor = fc
         self.image = i
+        self.hideLabel = hl
     }
     
-    init(n: String, t: String, d: String) {
+    init(n: String, t: String, d: String, hl: Bool) {
         self.name = n
         self.type = t
         self.description = d
         self.fontColor = UIColor.white
         self.image = UIImage(named: "Group Background 1")!
+        self.hideLabel = hl
     }
 }
 
