@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F6C699D8233475C7009586CD /* CalendarEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C699D7233475C7009586CD /* CalendarEvent.swift */; };
 		F6F54105232BF21B00422CEB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F54104232BF21B00422CEB /* AppDelegate.swift */; };
 		F6F54107232BF21B00422CEB /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F54106232BF21B00422CEB /* FeedViewController.swift */; };
 		F6F5410A232BF21B00422CEB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6F54108232BF21B00422CEB /* Main.storyboard */; };
@@ -44,6 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F6C699D7233475C7009586CD /* CalendarEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarEvent.swift; sourceTree = "<group>"; };
 		F6F54101232BF21B00422CEB /* gridMVP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gridMVP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6F54104232BF21B00422CEB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F6F54106232BF21B00422CEB /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
@@ -94,6 +96,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F6C699D6233469E7009586CD /* Groups */ = {
+			isa = PBXGroup;
+			children = (
+				F6F54142232C80C100422CEB /* GroupTableViewCell.swift */,
+				F6F54143232C80C100422CEB /* GroupTableViewCell.xib */,
+			);
+			path = Groups;
+			sourceTree = "<group>";
+		};
 		F6F540F8232BF21B00422CEB = {
 			isa = PBXGroup;
 			children = (
@@ -153,6 +164,7 @@
 			children = (
 				F6F54146232C82F200422CEB /* Data.swift */,
 				F6F54148232C895C00422CEB /* Group.swift */,
+				F6C699D7233475C7009586CD /* CalendarEvent.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -160,8 +172,7 @@
 		F6F54136232C11E500422CEB /* View */ = {
 			isa = PBXGroup;
 			children = (
-				F6F54142232C80C100422CEB /* GroupTableViewCell.swift */,
-				F6F54143232C80C100422CEB /* GroupTableViewCell.xib */,
+				F6C699D6233469E7009586CD /* Groups */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -321,6 +332,7 @@
 				F6F54105232BF21B00422CEB /* AppDelegate.swift in Sources */,
 				F6F5414B232CAAED00422CEB /* GroupDetailViewController.swift in Sources */,
 				F6F54147232C82F200422CEB /* Data.swift in Sources */,
+				F6C699D8233475C7009586CD /* CalendarEvent.swift in Sources */,
 				F6F5410D232BF21B00422CEB /* gridMVP.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

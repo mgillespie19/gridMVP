@@ -27,11 +27,8 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CRF-RH-2dA" userLabel="Feed Sizing View">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="850"/>
                                                 <subviews>
-                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Feed Header" translatesAutoresizingMaskIntoConstraints="NO" id="cKH-b2-qV9">
-                                                        <rect key="frame" x="0.0" y="-225" width="414" height="450"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" constant="450" id="nRn-de-45D"/>
-                                                        </constraints>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Feed Header" translatesAutoresizingMaskIntoConstraints="NO" id="cKH-b2-qV9">
+                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="156"/>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Feed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ss6-P3-RcD">
                                                         <rect key="frame" x="30" y="70" width="170.5" height="45.5"/>
@@ -123,21 +120,22 @@
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
+                                                    <constraint firstItem="mak-LK-9Xt" firstAttribute="top" secondItem="cKH-b2-qV9" secondAttribute="bottom" id="4Dr-9S-X1c"/>
                                                     <constraint firstItem="7NL-a9-E9z" firstAttribute="top" secondItem="mak-LK-9Xt" secondAttribute="bottom" constant="20" id="5cf-vL-6Hg"/>
                                                     <constraint firstItem="mak-LK-9Xt" firstAttribute="top" secondItem="fVo-IW-1se" secondAttribute="bottom" constant="18" id="7aX-lL-vL9"/>
-                                                    <constraint firstItem="cKH-b2-qV9" firstAttribute="top" secondItem="CRF-RH-2dA" secondAttribute="top" constant="-225" id="Cip-Z7-kD4"/>
+                                                    <constraint firstAttribute="trailing" secondItem="cKH-b2-qV9" secondAttribute="trailing" id="8Mo-dh-God"/>
                                                     <constraint firstItem="fVo-IW-1se" firstAttribute="leading" secondItem="CRF-RH-2dA" secondAttribute="leading" constant="48" id="Cyz-n9-v8t"/>
                                                     <constraint firstItem="7NL-a9-E9z" firstAttribute="leading" secondItem="CRF-RH-2dA" secondAttribute="leading" id="DEi-DW-eya"/>
                                                     <constraint firstAttribute="trailing" secondItem="7NL-a9-E9z" secondAttribute="trailing" id="EVN-Ua-Iu2"/>
-                                                    <constraint firstItem="cKH-b2-qV9" firstAttribute="centerX" secondItem="CRF-RH-2dA" secondAttribute="centerX" id="LVo-kb-n2F"/>
+                                                    <constraint firstItem="cKH-b2-qV9" firstAttribute="leading" secondItem="CRF-RH-2dA" secondAttribute="leading" id="GVg-ym-Jou"/>
                                                     <constraint firstItem="fVo-IW-1se" firstAttribute="top" secondItem="CRF-RH-2dA" secondAttribute="top" constant="114" id="M0I-ac-agp"/>
                                                     <constraint firstItem="ss6-P3-RcD" firstAttribute="leading" secondItem="CRF-RH-2dA" secondAttribute="leading" constant="30" id="NCE-CX-2D4"/>
                                                     <constraint firstItem="gOA-Rr-dxb" firstAttribute="top" secondItem="CRF-RH-2dA" secondAttribute="top" constant="70" id="R5d-ej-yqv"/>
+                                                    <constraint firstItem="cKH-b2-qV9" firstAttribute="top" secondItem="CRF-RH-2dA" secondAttribute="top" id="TJ7-2o-W6t"/>
                                                     <constraint firstAttribute="height" constant="850" id="Tjf-1S-xLk"/>
                                                     <constraint firstAttribute="trailing" secondItem="cKH-b2-qV9" secondAttribute="trailing" id="V4B-yg-sKY"/>
                                                     <constraint firstItem="mak-LK-9Xt" firstAttribute="leading" secondItem="CRF-RH-2dA" secondAttribute="leading" constant="30" id="XKg-s9-hwx"/>
                                                     <constraint firstItem="ss6-P3-RcD" firstAttribute="top" secondItem="CRF-RH-2dA" secondAttribute="top" constant="70" id="YKG-CE-cHN"/>
-                                                    <constraint firstItem="cKH-b2-qV9" firstAttribute="leading" secondItem="CRF-RH-2dA" secondAttribute="leading" id="aB1-Cm-BTH"/>
                                                     <constraint firstAttribute="bottom" secondItem="7NL-a9-E9z" secondAttribute="bottom" id="mAI-ax-pEM"/>
                                                     <constraint firstAttribute="trailing" secondItem="mak-LK-9Xt" secondAttribute="trailing" constant="30" id="mlT-dq-UV7"/>
                                                     <constraint firstAttribute="trailing" secondItem="gOA-Rr-dxb" secondAttribute="trailing" constant="25" id="ql0-Jk-yd3"/>
@@ -276,7 +274,7 @@
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="mbS-pn-0z3">
                                 <rect key="frame" x="20" y="0.0" width="59" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="X" image="backButton"/>
+                                <state key="normal" image="backButton"/>
                                 <connections>
                                     <action selector="backButtonClick:" destination="ReA-sH-ydK" eventType="touchUpInside" id="37J-QI-mdn"/>
                                 </connections>
@@ -519,7 +517,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UQi-AX-aCS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5878" y="865"/>
+            <point key="canvasLocation" x="5406" y="865"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yzg-aZ-6bg">
@@ -659,7 +657,7 @@
     </scenes>
     <resources>
         <image name="Bauhaus_sample" width="640" height="360"/>
-        <image name="Explore Background" width="124.33333587646484" height="133.66667175292969"/>
+        <image name="Explore Background" width="1564.6666259765625" height="2056.666748046875"/>
         <image name="Feed Header" width="187.5" height="122.5"/>
         <image name="Placeholder/image-ring-1" width="70" height="70"/>
         <image name="Placeholder/image-ring-2" width="70" height="70"/>

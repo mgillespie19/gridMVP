@@ -11,6 +11,7 @@ import UIKit
 
 class Group {
     let name: String
+    //    let id: String  ; this is going to be used to create a dictionary of seen groups within the app ?
     let type: String
     let description: String
     let image: UIImage
